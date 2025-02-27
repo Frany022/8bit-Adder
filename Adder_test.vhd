@@ -33,7 +33,7 @@ begin
     wait for 10ns;
     assert(C_signal = '0') report "Failed case 0 - C" severity error;
     assert(Cout_signal = '0') report "Failed case 0 - Cout" severity error;
-    wait for 40ns;
+    wait for 10ns;
     
 --case 1:
     A_signal <= '0';
@@ -42,7 +42,7 @@ begin
     wait for 10ns;
     assert(C_signal = '1') report "Failed case 1 - C" severity error;
     assert(Cout_signal = '0') report "Failed case 1 - Cout" severity error;
-    wait for 40ns;
+    wait for 10ns;
 
 --case 2:
     A_signal <= '0';
@@ -51,7 +51,7 @@ begin
     wait for 10ns;
     assert(C_signal = '1') report "Failed case 2 - C" severity error;
     assert(Cout_signal = '0') report "Failed case 2 - Cout" severity error;
-    wait for 40ns;
+    wait for 10ns;
 
 --case 3:
     A_signal <= '0';
@@ -60,7 +60,7 @@ begin
     wait for 10ns;
     assert(C_signal = '0') report "Failed case 3 - C" severity error;
     assert(Cout_signal = '1') report "Failed case 3 - Cout" severity error;
-    wait for 40ns;
+    wait for 10ns;
 
 --case 4:
     A_signal <= '1';
@@ -69,7 +69,7 @@ begin
     wait for 10ns;
     assert(C_signal = '1') report "Failed case 4 - C" severity error;
     assert(Cout_signal = '0') report "Failed case 4 - Cout" severity error;
-    wait for 40ns;
+    wait for 10ns;
 
 --case 5:
     A_signal <= '1';
@@ -78,7 +78,7 @@ begin
     wait for 10ns;
     assert(C_signal = '0') report "Failed case 5 - C" severity error;
     assert(Cout_signal = '1') report "Failed case 5 - Cout" severity error;
-    wait for 40ns;
+    wait for 10ns;
 
 --case 6:
     A_signal <= '1';
@@ -87,7 +87,7 @@ begin
     wait for 10ns;
     assert(C_signal = '0') report "Failed case 6 - C" severity error;
     assert(Cout_signal = '1') report "Failed case 6 - Cout" severity error;
-    wait for 40ns;
+    wait for 10ns;
 
 --case 7:
     A_signal <= '1';
@@ -96,7 +96,7 @@ begin
     wait for 10ns;
     assert(C_signal = '1') report "Failed case 7 - C" severity error;
     assert(Cout_signal = '1') report "Failed case 7 - Cout" severity error;
-    wait for 40ns;
+    wait for 10ns;
             
 end process;
                 
